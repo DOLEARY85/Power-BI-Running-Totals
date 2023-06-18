@@ -50,7 +50,7 @@ Output:
 
 **Power Query List.Generate**
 
-The fouth option is again to use Power Query, but instead of creating a column you can create a custom function, this can then be used as a repeatable process within your tables. It is also a lot faster that iterating through each row using a custom column so it would be ideal for larger datasets.
+The fourth option is again to use Power Query, but instead of creating a column you can create a custom function, this can then be used as a repeatable process within your tables. It is also a lot faster that iterating through each row using a custom column so it would be ideal for larger datasets.
 
 First you need to create a your custom function. In Queries pane on the left-hand side of Power Query - right click and select New Query - Blank Query:
 
@@ -107,7 +107,7 @@ Output below shows the outcome and the steps created by the new code:
 
 ![image](https://github.com/DOLEARY85/Power-BI-Running-Totals/assets/126701906/32cd9189-def2-4be7-a50f-2090874dd82d)
 
-Full code for table exceution:
+Full code for table execution:
 
         BV = List.Buffer( #"Renamed Columns"[Sales]),
         Running_Total = Table.FromList(fxRunningTotal(BV),Splitter.SplitByNothing(),{"Running_Total"}),
