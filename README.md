@@ -1,5 +1,5 @@
 # Creating Running Totals In Power BI
-Running totals are a very common query in Power BI and they are fairly simple to complete, there are a few options to solve this:
+Running totals are a very common query in Power BI and they are fairly simple to complete, here are a few options to solve this:
 
 **Calculated Column**
 
